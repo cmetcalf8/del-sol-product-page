@@ -1,3 +1,56 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(238, 238, 238);
+}
+
 .container {
-    background-color: teal;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(2, 202, 202));
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+}
+
+.left-column {
+    width: 50%;
+    position: relative;
+}
+
+.right-column {
+    color: white;
+    justify-content: right;
+    align-items: right;
+}
+
+.left-column img {
+    height: 250px;
+    position: relative;
+    z-index: 99;
+    left: -50px;
+}
+
+.subscribe-button {
+    background-color: gold;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    
+}
+
+.subscribe-button:hover {
+    cursor: pointer;
+}
+
+.email input {
+    border-radius: 12px;
+    border: none;
+    padding: 5px 12px;
 }
