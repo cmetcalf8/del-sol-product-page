@@ -18,12 +18,14 @@ html, body {
 .left-column {
     width: 50%;
     position: relative;
+    float: left;
 }
 
 .right-column {
     color: white;
     justify-content: right;
     align-items: right;
+    float: right;
 }
 
 .right-column p {
@@ -62,4 +64,13 @@ html, body {
     padding: 6px 12px;
     position: relative;
     width: 150px;
+}
+
+@media only screen and (max-width: 522px) {
+    .subscribe-button {
+        position: fixed;
+    }
+    .email input {
+        width: 70%;
+    }
 }
